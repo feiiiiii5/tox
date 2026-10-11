@@ -136,6 +136,7 @@ def register_env_select_flags(
     :param group_only: only register group selection flags
 
     """
+    option_group: argparse._ActionsContainer
     if multiple:
         option_group = parser.add_argument_group("select target environment(s)")
         # _MutuallyExclusiveGroup is private in argparse https://github.com/python/cpython/issues/144812
